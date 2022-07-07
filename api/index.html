@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abertura de Chamados Automatizados CA</title>
+  </head>
+
+  <body>
+    <form class="js_form">
+      <label htmlFor="solicitante">Solicitante</label>
+      <input
+        class="js_solicitante"
+        type="text"
+        placeholder="Solicitante"
+        id="solicitante"
+        name="solicitante"
+      />
+
+      <label htmlFor="areaSolicitacao">Área de Solicitação</label>
+      <input
+        data-input-area-solicitacao
+        name="areaSolicitacao"
+        id="areaSolicitacao"
+      />
+      <select data-area-solicitacao>
+        <option value="Aplicativos.diversos.configuração">
+          Selecione a área de solicitação
+        </option>
+      </select>
+
+      <label htmlFor="grupo">Grupo</label>
+      <input
+        class="js_grupo"
+        type="text"
+        placeholder="Grupo"
+        id="grupo"
+        name="grupo"
+      />
+
+      <label htmlFor="responsavel">Responsável</label>
+      <input
+        class="js_responsavel"
+        type="text"
+        placeholder="Responsável"
+        id="responsavel"
+        name="responsavel"
+      />
+
+      <label htmlFor="resumo">Resumo</label>
+      <input
+        class="js_resumo"
+        type="text"
+        placeholder="Resumo"
+        id="resumo"
+        name="resumo"
+      />
+
+      <label htmlFor="descricao">Descrição</label>
+      <input
+        class="js_descricao"
+        type="text"
+        placeholder="Descrição"
+        id="descricao"
+        name="descricao"
+      />
+
+      <button type="submit" class="js_btnSend">Enviar</button>
+    </form>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
