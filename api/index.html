@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,66 +9,121 @@
   </head>
 
   <body>
-    <form class="js_form">
-      <label htmlFor="solicitante">Solicitante</label>
-      <input
-        class="js_solicitante"
-        type="text"
-        placeholder="Solicitante"
-        id="solicitante"
-        name="solicitante"
-      />
+    <div class="wrapForm">
+      <form class="formulario">
+        <div class="wrapLogoZamorano">
+          <img
+            class="logoZamorano"
+            src="./public/img/logoZamoranoCA.png"
+            alt=""
+          />
+        </div>
+        <main>
+          <img
+            class="prediosImg"
+            src="./public/img/prediosCA.png"
+            alt=""
+            srcset=""
+          />
+          <h1 class="title">Abertura de Chamados Automatizados CA</h1>
+          <hr class="titleLine" />
+          <div class="wrapSolGrup">
+            <div class="wrapSizeP">
+              <label class="labelSolicitante" htmlFor="solicitante"
+                >Solicitante</label
+              >
+              <input
+              data-solicitante
+                class="inputSolicitante input"
+                type="text"
+                placeholder="Ex.3040555"
+                id="solicitante"
+                name="solicitante"
+              />
+            </div>
 
-      <label htmlFor="areaSolicitacao">Área de Solicitação</label>
-      <input
-        data-input-area-solicitacao
-        name="areaSolicitacao"
-        id="areaSolicitacao"
-      />
-      <select data-area-solicitacao>
-        <option value="Aplicativos.diversos.configuração">
-          Selecione a área de solicitação
-        </option>
-      </select>
+            <div class="wrapSizeP">
+              <label class="labelGrupo" htmlFor="grupo">Grupo</label>
+              <input
+                data-grupo
+                class="inputGrupo input"
+                type="text"
+                placeholder="Field Services N2"
+                id="grupo"
+                name="grupo"
+              />
+            </div>
+          </div>
 
-      <label htmlFor="grupo">Grupo</label>
-      <input
-        class="js_grupo"
-        type="text"
-        placeholder="Grupo"
-        id="grupo"
-        name="grupo"
-      />
+          <div class="wrapSizeG">
+            <label class="labelResponsavel" htmlFor="responsavel"
+              >Responsável</label
+            >
+            <input
+              data-responsavel
+              class="input inputResponsavel"
+              type="text"
+              placeholder="Fulano de Tal"
+              id="responsavel"
+              name="responsavel"
+            />
+          </div>
 
-      <label htmlFor="responsavel">Responsável</label>
-      <input
-        class="js_responsavel"
-        type="text"
-        placeholder="Responsável"
-        id="responsavel"
-        name="responsavel"
-      />
+          <div class="wrapAreaSolicitacao">
+            <div class="wrapLabInput">
+              <label class="labelAreaSolicitacao" htmlFor="areaSolicitacao"
+                >Área de Solicitação</label
+              >
+              <input
+                class="inputAreaSolicitacao"
+                data-input-area-solicitacao
+                name="areaSolicitacao"
+                id="areaSolicitacao"
+                placeholder="Pesquise..."
+              />
+            </div>
 
-      <label htmlFor="resumo">Resumo</label>
-      <input
-        class="js_resumo"
-        type="text"
-        placeholder="Resumo"
-        id="resumo"
-        name="resumo"
-      />
+            <select
+              class="selectAreaSolicitacao"
+              data-area-solicitacao
+            ></select>
+          </div>
 
-      <label htmlFor="descricao">Descrição</label>
-      <input
-        class="js_descricao"
-        type="text"
-        placeholder="Descrição"
-        id="descricao"
-        name="descricao"
-      />
+          <div class="wrapSizeG">
+            <label class="labelResumo labelResponsavel" htmlFor="resumo"
+              >Resumo</label
+            >
+            <input
+              data-resumo
+              class="input inputResumo"
+              type="text"
+              placeholder="Resuma-o... "
+              id="resumo"
+              name="resumo"
+            />
+          </div>
 
-      <button type="submit" class="js_btnSend">Enviar</button>
-    </form>
-    <script type="module" src="./js/main.js"></script>
+          <div class="wrapDescricao">
+            <label class="labelDescricao labelResponsavel" htmlFor="descricao"
+              >Descrição</label
+            >
+            <textarea
+              data-descricao
+              class="inputDescricao"
+              type="text"
+              placeholder="Descreva-o..."
+              id="descricao"
+              name="descricao"
+            ></textarea>
+          </div>
+          <button data-btn-send class="botaoEnviar" type="submit">
+            Enviar ao Robô
+          </button>
+        </main>
+      </form>
+    </div>
+    <span data-spanMsg class="hide spanSuccess"
+      ></span>
+    <script type="module" src="./public/js/main.js"></script>
   </body>
 </html>

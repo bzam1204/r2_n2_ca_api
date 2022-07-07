@@ -1,8 +1,9 @@
-function listaAreaSolicitacao() {
+import selectList from "./selectList.js";
+
+function listaAreaSolicitacao(areasDeSolicitacao) {
   var campoFiltro = document.querySelector("[data-input-area-solicitacao]");
 // 
   campoFiltro.addEventListener("input", function () {
-    console.log(this.value);
     var options = document.querySelectorAll(".option");
 
     if (this.value.length > 0) {
@@ -10,12 +11,14 @@ function listaAreaSolicitacao() {
         if (options[i].textContent.toLowerCase().indexOf(this.value) > -1) {
           options[i].style.display = "block";
         } else {
-          options[i].style.display = "none";
+          options[i].remove()
         }
       }
     } else {
+      
       for (var i = 0; i < options.length; i++) {
         options[i].style.display = "block";
+        selectList(areasDeSolicitacao);
       }
     } 
   });

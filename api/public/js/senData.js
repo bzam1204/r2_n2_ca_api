@@ -9,8 +9,9 @@ export default function senData(data) {
     },
     body: JSON.stringify(data),
   })
-    .then((response) => {
-      response.json();
+    .then((res) => {
+      res.status(200).json("ok");
+      msgSuccess();
       console.log(response);
     })
     .then((data) => {
@@ -18,5 +19,27 @@ export default function senData(data) {
     })
     .catch((error) => {
       console.error("Error:", error);
+      msgErro();
     });
+}
+
+function msgErro() {
+  const span = document.querySelector("[data-spanMsg]");
+  span.innerHTML = `<img class="success" src="./public/img/falha ao enviar.png" alt=""
+  />`;
+  span.classList.add("showMsg");
+  span.addEventListener("click", () => {
+    span.classList.remove("showMsg");
+  });
+}
+
+function msgSuccess() {
+  const span = document.querySelector("[data-spanMsg]");
+  span.innerHTML = `<img class="success" src="./public/img/ENVIADO COM SUCESSO.png" alt=""
+/>`;
+  span.classList.add("showMsg");
+
+  span.addEventListener("click", () => {
+    span.classList.remove("showMsg");
+  });
 }

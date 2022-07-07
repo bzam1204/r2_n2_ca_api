@@ -1,11 +1,261 @@
-form {
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf);
+}
+
+body {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  color: #0a062b;
+  background: #172c3c;
+}
+
+.wrapForm {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario {
+  position: relative;
+  margin: 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 695px;
+  height: 895px;
+  background: #c6d4e1;
+  box-shadow: 12px 13px 0px rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+}
+
+.wrapLogoZamorano {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 9px 0 0 25px;
+}
+
+.logoZamorano {
+  width: 40px;
+  height: 45px;
+}
+
+main {
+  width: 522px;
+  padding: 19px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prediosImg {
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0;
+  margin: 0 0 0;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;
+  text-align: center;
+  color: #0a062b;
+}
+
+.titleLine {
+  background-color: #0a062b;
+  width: 100%;
+  height: 2px;
+  margin: 5px 0 40px;
+  padding: 0;
+  border-radius: 16px;
+  border: none;
+}
+.wrapSolGrup {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapSizeP {
+  width: 218px;
+  margin: 0 0 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapSizeG {
+  width: 100%;
+  margin: 0 0 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  box-sizing: border-box;
+  color: #0a062b;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  font-family: "Roboto Mono";
+  border-bottom: 2px solid #0a062b;
+}
+
+.input::placeholder {
+  color: rgba(10, 6, 43, 0.67);
+}
+
+.input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #0a062b;
+}
+
+.labelResponsavel {
+  width: 100%;
+  font-size: 16px;
+  line-height: 36px;
+  color: #0a062b;
+}
+
+.wrapAreaSolicitacao {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 22px;
+}
+
+.wrapLabInput {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 22px;
+}
+
+.labelAreaSolicitacao {
+  width: 305px;
+  line-height: 21px;
+}
+
+.inputAreaSolicitacao {
+  box-sizing: border-box;
+  background-color: transparent;
+  width: 218px;
+  height: 35px;
+  text-indent: 20px;
+  border: 1.5px solid #0a062b;
+  border-radius: 16px;
+}
+
+.inputAreaSolicitacao::placeholder {
+  color: rgba(10, 6, 43, 0.67);
+  font-family: "Roboto Mono";
+}
+
+.selectAreaSolicitacao {
+  box-sizing: border-box;
+
+  width: 525px;
+  height: 29px;
+  left: 457px;
+  top: 574px;
+  background: transparent;
+  text-indent: 13px;
+  border: 2px solid #0a062b;
+  border-radius: 16px;
+}
+
+.optionAreaSolicitacao {
+  background-color: #172c3c;
+}
+
+.wrapDescricao {
+  width: 100%;
+  height: 146px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0 0 22px;
+}
+
+.labelDescricao {
+  line-height: 21px;
+}
+
+.inputDescricao {
+  width: 487px;
+  height: 88px;
+  background-color: transparent;
+  border: 2px solid #0a062b;
+  border-radius: 8px;
+  padding: 11px 15px;
+}
+
+.botaoEnviar {
+  width: 300px;
+  height: 53px;
+  text-align: center;
+  background: #0a062b;
+  border-radius: 16px;
+  font-size: 22px;
+  color: #c6d4e1;
+  border: none;
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+}
+
+.botaoEnviar:hover {
+  background: #2f3c75;
+}
+
+.botaoEnviar:active {
+  background: #5d72cf;
+  box-shadow: inset 0 0 0 2px #322c66;
+}
+
+.spanSuccess {
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.success {
+  width: 288px;
+  height: 228px;
+}
+
+.hide {
+  display: none;
 }
 
 html .show {
@@ -14,6 +264,6 @@ html .show {
   align-items: center;
 }
 
-.hide {
-  display: none;
+html body .showMsg {
+  display: flex;
 }
