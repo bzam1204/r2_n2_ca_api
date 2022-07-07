@@ -10,7 +10,6 @@ export default function senData(data) {
     body: JSON.stringify(data),
   })
     .then((res) => {
-      res.status(200).json("ok");
       msgSuccess();
       console.log(response);
     })
