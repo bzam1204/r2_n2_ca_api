@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Roboto Mono";
-  font-size: 16px;
+  font-size: 1.55vh;
   color: #0a062b;
   background: #172c3c;
 }
@@ -32,10 +32,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 695px;
-  height: 895px;
+  width: 67.6vh;
+  height: 87.05vh;
   background: #c6d4e1;
-  box-shadow: 12px 13px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: 1.16vh 1.26vh 0px rgba(0, 0, 0, 0.7);
   border-radius: 16px;
 }
 
@@ -45,17 +45,17 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  padding: 9px 0 0 25px;
+  padding: 0.6vw 0 0 2.42vh;
 }
 
 .logoZamorano {
-  width: 40px;
-  height: 45px;
+  width: 3.88vh;
+  height: 4.37vh;
 }
 
 main {
-  width: 522px;
-  padding: 19px 0 0;
+  width: 50.77vh;
+  padding: 1.83vh 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,8 +76,8 @@ main {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  font-size: 23px;
-  line-height: 30px;
+  font-size: 2.22vh;
+  line-height: 2.91vh;
   text-align: center;
   color: #0a062b;
 }
@@ -85,8 +85,8 @@ main {
 .titleLine {
   background-color: #0a062b;
   width: 100%;
-  height: 2px;
-  margin: 5px 0 40px;
+  height: 0.18vh;
+  margin: 0.47vh 0 3.88vh;
   padding: 0;
   border-radius: 16px;
   border: none;
@@ -98,15 +98,15 @@ main {
 }
 
 .wrapSizeP {
-  width: 218px;
-  margin: 0 0 26px;
+  width: 21.19vh;
+  margin: 0 0 2.5vh;
   display: flex;
   flex-direction: column;
 }
 
 .wrapSizeG {
   width: 100%;
-  margin: 0 0 26px;
+  margin: 0 0 2.5vh;
   display: flex;
   flex-direction: column;
 }
@@ -115,27 +115,29 @@ main {
   box-sizing: border-box;
   color: #0a062b;
   width: 100%;
-  height: 40px;
+  height: 3.88vh;
   background-color: transparent;
   border: none;
   font-family: "Roboto Mono";
-  border-bottom: 2px solid #0a062b;
+  border-bottom: 0.18vh solid #0a062b;
 }
 
 .input::placeholder {
   color: rgba(10, 6, 43, 0.67);
+  font-family: "Roboto Mono";
+  font-size: 1.55vh;
 }
 
 .input:focus {
   outline: none;
   border: none;
-  border-bottom: 2px solid #0a062b;
+  border-bottom: 0.18vh solid #0a062b;
 }
 
 .labelResponsavel {
   width: 100%;
-  font-size: 16px;
-  line-height: 36px;
+  font-size: 1.55vh;
+  line-height: 3.5vh;
   color: #0a062b;
 }
 
@@ -143,7 +145,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 0 22px;
+  margin: 0 0 2.12vh;
 }
 
 .wrapLabInput {
@@ -152,22 +154,24 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 22px;
+  margin: 0 0 2.12vh;
 }
 
 .labelAreaSolicitacao {
-  width: 305px;
-  line-height: 21px;
+  width: 29.66vh;
+  line-height: 2.03vh;
 }
 
 .inputAreaSolicitacao {
   box-sizing: border-box;
   background-color: transparent;
-  width: 218px;
-  height: 35px;
-  text-indent: 20px;
-  border: 1.5px solid #0a062b;
+  width: 21.19vh;
+  height: 3.4vh;
+  text-indent: 1.93vh;
+  border: 0.14vh solid #0a062b;
   border-radius: 16px;
+  font-family: "Roboto Mono";
+  font-size: 1.56vh;
 }
 
 .inputAreaSolicitacao::placeholder {
@@ -177,52 +181,59 @@ main {
 
 .selectAreaSolicitacao {
   box-sizing: border-box;
-
-  width: 525px;
-  height: 29px;
-  left: 457px;
-  top: 574px;
+  font-size: 1.2vh;
+  width: 100%;
+  height: 2.8vh;
+  color: rgba(10, 6, 43, 0.67);
   background: transparent;
-  text-indent: 13px;
-  border: 2px solid #0a062b;
+  text-indent: 1.2vh;
+  font-family: "Roboto Mono";
+
+  border: 0.18vh solid #0a062b;
   border-radius: 16px;
 }
 
 .optionAreaSolicitacao {
-  background-color: #172c3c;
+  background-color: #c6d4e1;
+  color: #172c3c;
+  font-family: "Roboto Mono";
+  font-size: 1.5vh;
+  padding: 0.2vh 0.2vh;
+  border-radius: 16px;
 }
 
 .wrapDescricao {
-  width: 100%;
-  height: 146px;
+  width: 51.26vh;
+  height: 14.25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  margin: 0 0 22px;
+  margin: 0 0 2.12vh;
 }
 
 .labelDescricao {
-  line-height: 21px;
+  line-height: 2.03vh;
 }
 
 .inputDescricao {
-  width: 487px;
-  height: 88px;
+  width: 47.36vh;
+  height: 8.55vh;
   background-color: transparent;
-  border: 2px solid #0a062b;
+  border: 0.18vh solid #0a062b;
   border-radius: 8px;
-  padding: 11px 15px;
+  padding: 1.06vh 1.45vh;
+  font-size: 1.56vh;
 }
 
 .botaoEnviar {
-  width: 300px;
-  height: 53px;
+  width: 29.17vh;
+  height: 4.28vh;
   text-align: center;
   background: #0a062b;
   border-radius: 16px;
-  font-size: 22px;
+  font-size: 2.12vh;
   color: #c6d4e1;
   border: none;
   cursor: pointer;
@@ -235,23 +246,26 @@ main {
 
 .botaoEnviar:active {
   background: #5d72cf;
-  box-shadow: inset 0 0 0 2px #322c66;
+  box-shadow: inset 0 0 0 0.18vh #322c66;
 }
 
 .spanSuccess {
   position: absolute;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 10;
+  transition: ease-in-out 0.3s;
+  opacity: 0;
 }
 
 .success {
-  width: 288px;
-  height: 228px;
+  width: 28.01vh;
+  height: 22.17vh;
+  transition: ease-in-out 0.3s;
 }
 
 .hide {
@@ -262,8 +276,10 @@ html .show {
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 1;
 }
 
 html body .showMsg {
+  opacity: 1;
   display: flex;
 }

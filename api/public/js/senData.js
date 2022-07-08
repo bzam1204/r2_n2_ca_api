@@ -24,7 +24,7 @@ export default function senData(data) {
 
 function msgErro() {
   const span = document.querySelector("[data-spanMsg]");
-  span.innerHTML = `<img class="success" src="./img/falha ao enviar.png" alt=""
+  span.innerHTML = `<img class="success" src="./public/img/falha ao enviar.png" alt=""
   />`;
   span.classList.add("showMsg");
   span.addEventListener("click", () => {
@@ -34,7 +34,7 @@ function msgErro() {
 
 function msgSuccess() {
   const span = document.querySelector("[data-spanMsg]");
-  span.innerHTML = `<img class="success" src="./img/ENVIADO COM SUCESSO.png" alt=""
+  span.innerHTML = `<img class="success" src="./public/img/ENVIADO COM SUCESSO.png" alt=""
 />`;
   span.classList.add("showMsg");
 
