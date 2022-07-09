@@ -8,6 +8,7 @@ function selectList(areasDeSolicitacao) {
     option.classList.add("option", "optionAreaSolicitacao");
     select.appendChild(option);
   });
+
 }
 
 export default selectList;
