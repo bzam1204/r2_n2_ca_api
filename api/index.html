@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,19 +12,10 @@
     <div class="wrapForm">
       <form class="formulario">
         <div class="wrapLogoZamorano">
-          <img
-            class="logoZamorano"
-            src="./public/img/logoZamoranoCA.png"
-            alt=""
-          />
+          <img class="logoZamorano" src="./img/logoZamoranoCA.png" alt="" />
         </div>
         <main>
-          <img
-            class="prediosImg"
-            src="./public/img/prediosCA.png"
-            alt=""
-            srcset=""
-          />
+          <img class="prediosImg" src="./img/prediosCA.png" alt="" srcset="" />
           <h1 class="title">Abertura de Chamados Automatizados CA</h1>
           <hr class="titleLine" />
           <div class="wrapSolGrup">
@@ -33,10 +24,11 @@
                 >Solicitante</label
               >
               <input
-              data-solicitante
+                required
+                data-solicitante
                 class="inputSolicitante input"
                 type="text"
-                placeholder="Ex.3040555"
+                placeholder="Insira a *Matrícula* Ex.3040555"
                 id="solicitante"
                 name="solicitante"
               />
@@ -57,9 +49,10 @@
 
           <div class="wrapSizeG">
             <label class="labelResponsavel" htmlFor="responsavel"
-              >Responsável</label
+              >Técnico Responsável</label
             >
             <input
+              required
               data-responsavel
               class="input inputResponsavel"
               type="text"
@@ -84,6 +77,7 @@
             </div>
 
             <select
+              required
               class="selectAreaSolicitacao"
               data-area-solicitacao
             ></select>
@@ -94,6 +88,7 @@
               >Resumo</label
             >
             <input
+              required
               data-resumo
               class="input inputResumo"
               type="text"
@@ -108,6 +103,7 @@
               >Descrição</label
             >
             <textarea
+              required
               data-descricao
               class="inputDescricao"
               type="text"
@@ -122,8 +118,7 @@
         </main>
       </form>
     </div>
-    <span data-spanMsg class="hide spanSuccess"
-      ></span>
-    <script type="module" src="./public/js/main.js"></script>
+    <span data-spanMsg class="hide spanSuccess"></span>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
