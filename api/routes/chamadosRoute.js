@@ -6,11 +6,11 @@ const router = Router();
 
 router
   .get("/chamados", ChamadoController.getChamados)
-  .get("/chamado/:id", ChamadoController.getOneChamado)
+  .get("/chamados/:id", ChamadoController.getOneChamado)
   .get("/chamados/:responsavel", ChamadoController.getChamadosResponsavel)
-  .post("/chamado/create", ChamadoController.createChamado)
-  .put("/chamado/update/:id", ChamadoController.updateChamado)
-  .delete("/chamado/delete/:id", ChamadoController.deleteChamado)
+  .post("/chamados/create", ChamadoController.createChamado)
+  .put("/chamados/update/:id", ChamadoController.updateChamado)
+  .delete("/chamados/delete/:id", ChamadoController.deleteChamado)
   .get("/", (req, res) => {
     res.sendFile(path.join(`${__dirname}../../index.html`));
     //__dirname : It will resolve to your project folder.

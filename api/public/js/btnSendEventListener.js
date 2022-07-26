@@ -1,5 +1,6 @@
 import getDataCa from "./getDataCa.js";
 import senData from "./senData.js";
+import verificaDadosFormulario from "./verificaDadosFormulario.js";
 
 function btnSentEventListener() {
   //take the button element from the DOM
@@ -8,7 +9,7 @@ function btnSentEventListener() {
   btnSend.addEventListener("click", function (e) {
     e.preventDefault();
     const data = getDataCa();
-    senData(data);
+    if (verificaDadosFormulario(data)) senData(data);
   });
 }
 
