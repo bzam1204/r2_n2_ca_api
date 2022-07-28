@@ -9,15 +9,15 @@ function modeloDeTexto() {
   const texto = [
     {
       title: "Necessidade",
-      text: "Há a necessidade de ******* no computador em questão.",
+      text: "Há a necessidade de _______ no computador em questão.",
     },
     {
       title: "Solicitação",
-      text: "O(a) servidor(a) solicita ******* . Solicita suporte técnico.",
+      text: "O(a) servidor(a) solicita _______ . Solicita suporte técnico.",
     },
     {
       title: "Informa",
-      text: "O(a) servidor(a) informa que ******* . Solicita suporte técnico.",
+      text: "O(a) servidor(a) informa que _______ . Solicita suporte técnico.",
     },
   ];
 
