@@ -203,7 +203,7 @@ main {
 }
 
 .wrapDescricao {
-  width: 51.26vh;
+  width: 100%;
   height: 14.25vh;
   display: flex;
   flex-direction: column;
@@ -213,7 +213,8 @@ main {
   margin: 0 0 2.12vh;
 }
 
-.labelDescricao {
+html .labelDescricao {
+  width: fit-content;
   line-height: 2.03vh;
 }
 
@@ -289,8 +290,9 @@ html body .showMsg {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
+  margin: 0 0 1vh 0;
 }
 
 .wrapModelo {
@@ -300,4 +302,51 @@ html body .showMsg {
   gap: 16px;
   width: 423px;
   height: 31px;
+}
+
+.listaModeloLabel {
+  width: 41.308vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  margin: 0 0 0 1.26vh;
+
+  padding: 4px 0.48vh;
+  gap: 1.56vh;
+
+  border: 1px solid #000000;
+  border-radius: 16px;
+}
+
+.listaModeloLabel li {
+  list-style: none;
+  width: 10.25vh;
+  height: 2.24vh;
+
+  background: #c6d4e1;
+  border: 1px solid #000000;
+  border-radius: 16px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  font-family: "Roboto Mono";
+  font-size: 1.07vh;
+  line-height: 2.24vh;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+  color: #0a062b;
+}
+
+.modelTxtBtnActive {
+  background: #0a062b;
+  color: #c6d4e1;
+}
+
+.modelTxtBtnUnactive {
+  background: #c6d4e1;
+  color: #0a062b;
 }
