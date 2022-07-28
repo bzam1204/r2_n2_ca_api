@@ -222,7 +222,7 @@ main {
   height: 8.55vh;
   background-color: transparent;
   border: 0.18vh solid #0a062b;
-  resize: none;
+  resize: noned;
   border-radius: 8px;
   padding: 1.06vh 1.45vh;
   font-size: 1.56vh;
@@ -283,4 +283,21 @@ html .show {
 html body .showMsg {
   opacity: 1;
   display: flex;
+}
+
+.wrapModeloLabel {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.wrapModelo {
+  display: flex;
+  align-items: center;
+  padding: 4px 5px;
+  gap: 16px;
+  width: 423px;
+  height: 31px;
 }
